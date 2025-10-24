@@ -1,0 +1,22 @@
+# Byte-compiled and temporary files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE and editor files
+.idea/
+.vscode/
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Operating system files
+.DS_Store
+Thumbs.db
