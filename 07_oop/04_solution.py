@@ -117,4 +117,30 @@
 ##### COnclusion : chai_brand likhne se bhi kaam ho rha but aisa karna nahi chahiye , because we are breaking convention for getter get and for setter set
 
 
+
+#### final Code for encapsulation
+class Car:
+    def __init__(self, brand, model):
+        self.__brand = brand
+        self.model = model
+
+    def get_brand(self):
+        return self.__brand + "!"
+
+    def full_name(self):
+        return f"{self.__brand} {self.model}"
+    
+    
+
+class ElectricCar(Car):
+    def __init__(self, brand, model, battery_Size):
+        super().__init__(brand,model)
+        self.battery_size  = battery_Size
+
+
+
+my_electric_car = ElectricCar("Tata","Harrier.ev", "79kWh")
+# print(my_electric_car.__brand)   ##### Ye to nahi chalega as direct access is not allowed
+print(my_electric_car.get_brand())
+
 ##### Hw: Learn setter
