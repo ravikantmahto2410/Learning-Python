@@ -46,7 +46,7 @@
 
 class Car:
     def __init__(self,brand, model):
-        self.brand = brand      ### self.brand means class ke ander ke variable and the only brand that is written at the very right hand side is parameter  jo user nae diye hai ab ho object bana raha tha Car class se
+        self.brand = brand      ### self.brand means class ke ander ke variable and the only brand that is written at the very right hand side is parameter  jo user nae diye hai jab ho object bana raha tha Car class se
         self.model = model
 
 
